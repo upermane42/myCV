@@ -150,6 +150,7 @@
       .nav { min-height: 64px; }
       .nav-links { display: none; }
       .nav-cta { padding: 9px 13px; font-size: 12px; }
+      .nav-cta--space {display: none;}
       .hero { padding: 68px 0 52px; }
       .hero-grid { grid-template-columns: 1fr; gap: 32px; }
       h1 { margin-top: 18px; font-size: clamp(50px, 13vw, 76px); }
@@ -169,6 +170,7 @@
       .footer { align-items: flex-start; flex-direction: column; gap: 5px; }
     }
     @media (max-width: 420px) {
+      .nav-cta {padding: 6px 8px; font-size: 8px; text-align: center;}
       .wrap { width: calc(100% - 32px); }
       .education, .skills-grid { grid-template-columns: 1fr; }
       .skill-group.wide { grid-column: auto; }
@@ -196,7 +198,7 @@
           <button type="button" lang="ru" data-lang="ru" aria-pressed="false">RU</button>
           <button type="button" lang="en" data-lang="en" aria-pressed="false">EN</button>
         </div>
-        <a class="nav-cta" href="mailto:dimonnn.26@gmail.com"><span data-i18n="navContact">Napisz do mnie</span> <span aria-hidden="true">↗</span></a>
+        <a class="nav-cta" href="mailto:dimonnn.26@gmail.com"><span data-i18n="navContact">Napisz do mnie</span> <span class="nav-cta--space" aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </header>
